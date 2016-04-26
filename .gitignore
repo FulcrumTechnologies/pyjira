@@ -1,0 +1,5 @@
+pyjira/__pycache__
+pyjira/*.pyc
+*.pyc
+test.py
+
