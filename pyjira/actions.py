@@ -23,5 +23,28 @@ def get_field(id):
     fields = _json.loads(get_all_fields())
     for f in fields:
         if (f["id"] == str(id) or
-            f["id"].replace("customfield_", "") == str(id)):
+                f["id"].replace("customfield_", "") == str(id)):
             return _json.dumps(f)
+
+
+def get_issue_fields(id, field_names_enabled=True):
+    """Get all fields listed for an issue.
+    Parameters:
+    - id: id of an issue.
+    - field_names_enabled: if False, returns result with "customfield_" names.
+      True by default.
+    """
+    issue = _json.loads(get_issue(id))
+
+    result = {}
+
+    for key, value in issue["fields"].items():
+        if ("customfield_" in key and
+                value and field_names_enabled):
+            field = _json.loads(get_field(key))
+            field_name = field["name"]
+            result[field_name] = value
+        elif value:
+            result[key] = value
+
+    return _json.dumps(result)
