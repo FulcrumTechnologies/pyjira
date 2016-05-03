@@ -2,6 +2,16 @@
 PyJira REST API wrapper
 ======================================
 
+.. image:: https://img.shields.io/pypi/v/pyjira.svg
+   :target: https://img.shields.io/pypi/v/pyjira
+
+.. image:: https://img.shields.io/badge/python-2.6%2C%202.7%2C%203.3%2C%203.4%2C%203.5-orange.svg
+   :target: https://img.shields.io/badge/python-2.6%2C%202.7%2C%203.3%2C%203.4%2C%203.5-orange
+
+.. image:: https://travis-ci.org/FulcrumIT/pyjira.svg
+   :target: https://travis-ci.org/FulcrumIT/pyjira
+   :alt: Travis build status
+
 Setup
 ---------------
 
