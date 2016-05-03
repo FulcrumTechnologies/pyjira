@@ -2,6 +2,15 @@ import pyjira.api as _api
 import json as _json
 
 
+def get_issues(id, limit=50):
+    """Return 50 issues for a project.
+    Parameters:
+    - id: id of a project.
+    - limit: max number of results to be returned.
+    """
+    return _api.rest("/search?jql=project=" + str(id) + "&maxResults=" + str(limit))
+
+
 def get_issue(id):
     """Get issue and its details.
     Parameters:

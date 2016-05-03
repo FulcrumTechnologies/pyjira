@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pyjira/__init__.py
+pyjira/actions.py
+pyjira/api.py
+pyjira.egg-info/PKG-INFO
+pyjira.egg-info/SOURCES.txt
+pyjira.egg-info/dependency_links.txt
+pyjira.egg-info/top_level.txt

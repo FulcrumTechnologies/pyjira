@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pyjira
+Version: 1.0
+Summary: An API wrapper for Atlassian Jira
+Home-page: https://github.com/FulcrumIT/pyjira
+Author: Caleb Hawkins
+Author-email: hawkins.caleb93@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/FulcrumIT/pyjira/tarball/1.0
+Description: UNKNOWN
+Keywords: jira
+Platform: UNKNOWN
