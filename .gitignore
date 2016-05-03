@@ -2,4 +2,5 @@ pyjira/__pycache__
 pyjira/*.pyc
 *.pyc
 test.py
-
+*.egg-info/
+dist/
