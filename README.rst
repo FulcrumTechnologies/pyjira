@@ -26,7 +26,9 @@ Next, you need to set up your environment variables.
 Go to your home directory (~/) and put this in ".pyjira":
 
     export PYJIRA_USER=put your username here
+    
     export PYJIRA_TOKEN=put your password here
+    
     export PYJIRA_ORG=put the organization name here
 
 Next, add this to ".bash_profile", also in the home directory:
@@ -65,7 +67,9 @@ To get a specific field:
 
 To get all fields within an issue:
 
-    pyjira.get_issue_fields("SpaceJam-931")  # Add False as a second parameter to get result with "customfield_#" field names
+    pyjira.get_issue_fields("SpaceJam-931")  
+    
+    # Add False as a second parameter to get result with "customfield_#" field names
 
 WIP
 ---------------
